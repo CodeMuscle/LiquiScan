@@ -1,8 +1,28 @@
-import React from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 
+//  INTERNAL IMPORT
+import { Header,
+  Home,
+  Action,
+  GetPool,
+  Networks,
+  LiqudityHistory,
+  PoolHistory,
+  Promo,
+  Loader,
+  IconOne,
+  IconTwo, } from '../components/index';
+  import { CONTEXT } from '../context/index';
+
+  
 const index = () => {
+
+  const { DAPP_NAME } = useContext(CONTEXT);
+
   return (
-    <div>index</div>
+    <div>
+      {DAPP_NAME}
+    </div>
   )
 }
 
