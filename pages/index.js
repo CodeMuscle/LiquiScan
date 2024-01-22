@@ -18,10 +18,10 @@ import { Header,
   
 const HomePage = () => {
 
-  const { DAPP_NAME } = useContext(CONTEXT);
+  const { DAPP_NAME, loader, GET_POOL_DETAILS, GET_POOL_ADDRESS } = useContext(CONTEXT);
 
   // STATE VARIABLE
-  const [loader, setLoader] = useState(false);
+  // const [loader, setLoader] = useState(false);
   const [activeNetwork, setActiveNetwork] = useState('');
   const [activeComponent, setActiveComponent] = useState("Home");
 
@@ -36,7 +36,7 @@ const HomePage = () => {
     <div className="bg-slate-900">
       <Header setActiveComponent={setActiveComponent} activeNetwork={activeNetwork} />
 
-      {/* {
+      {
         activeComponent == 'Home' ? (
           <>
             <Home setActiveComponent={setActiveComponent} GET_POOL_DETAILS={GET_POOL_DETAILS} />
@@ -52,7 +52,7 @@ const HomePage = () => {
         ) : (
           ""
         )
-      } */}
+      }
 
         <Action />
 
