@@ -8,10 +8,10 @@ import { Header,
   Networks,
   LiqudityHistory,
   PoolHistory,
-  Promo,
+  // Promo,
   Loader,
-  IconOne,
-  IconTwo, 
+  // IconOne,
+  // IconTwo, 
 } from '../components/index';
   import { CONTEXT } from '../context/index';
 
@@ -36,23 +36,23 @@ const HomePage = () => {
     <div className="bg-slate-900">
       <Header setActiveComponent={setActiveComponent} activeNetwork={activeNetwork} />
 
-      {
-        activeComponent == 'Home' ? (
-          <>
-            <Home setActiveComponent={setActiveComponent} GET_POOL_DETAILS={GET_POOL_DETAILS} />
-          </>
-        ) : activeComponent == 'Liquidity' ? (
-          <GetPool GET_POOL_ADDRESS={GET_POOL_ADDRESS} />
-        ) : activeComponent == 'Pool History' ? (
-          <PoolHistory setActiveComponent={setActiveComponent} />
-        ) : activeComponent == 'Liqudity History' ? (
-          <LiqudityHistory setActiveComponent={setActiveComponent} />
-        ) : activeComponent == 'Networks' ? (
-          <Networks setActiveComponent={setActiveComponent} activeNetwork={activeNetwork} />
-        ) : (
-          ""
-        )
-      }
+        {
+          activeComponent == 'Home' ? (
+            <>
+              <Home setActiveComponent={setActiveComponent} GET_POOL_DETAILS={GET_POOL_DETAILS} />
+            </>
+          ) : activeComponent == 'Liquidity' ? (
+            <GetPool GET_POOL_ADDRESS={GET_POOL_ADDRESS} />
+          ) : activeComponent == 'Pool History' ? (
+            <PoolHistory setActiveComponent={setActiveComponent} />
+          ) : activeComponent == 'Liqudity History' ? (
+            <LiqudityHistory setActiveComponent={setActiveComponent} />
+          ) : activeComponent == 'Networks' ? (
+            <Networks setActiveComponent={setActiveComponent} activeNetwork={activeNetwork} />
+          ) : (
+            ""
+          )
+        }
 
         <Action />
 

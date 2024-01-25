@@ -31,7 +31,7 @@ const Header = ({ setActiveComponent, activeNetwork }) => {
             {
               navMenu.map((list, index) => (
                 <li key={index} onClick={() => setActiveComponent(list)} className="nav-item">
-                  <a href={`/${list.toLowerCase()}`} className="nav-link">
+                  <a className="nav-link">
                     {list}
                   </a>
                 </li>

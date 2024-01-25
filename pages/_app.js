@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import "../styles/globals.css";
-import toast, {Toaster} from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
 // INTERNAL IMPORT
 import { CONTEXT_Provider } from "../context/index";
