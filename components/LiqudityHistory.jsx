@@ -1,7 +1,11 @@
 import React from "react";
 
 const LiqudityHistory = () => {
-  return <div>LiqudityHistory</div>;
+  return (
+    <div className="pt-28">
+    
+    </div>
+  )
 };
 
 export default LiqudityHistory;

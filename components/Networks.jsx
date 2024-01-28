@@ -1,42 +1,43 @@
 
 
-const Networks = ({ setActiveComponent, activeNetwork }) => {
+const Networks = ({ setActiveComponent, activeNetwork, setActiveNetwork }) => {
   // Network List
   const networks = [
     {
       name: 'Ethereum',
-      rpcUrl: '',
+      rpcUrl: 'https://rpc.ankr.com/eth',
       logo: 'assets/images/ethereum.png',
     },
     {
       name: 'Polygon Mumbai',
-      rpcUrl: '',
+      rpcUrl: 'https://rpc.ankr.com/polygon_mumbai',
       logo: 'assets/images/polygon.png',
     },
     {
       name: 'Polygon',
-      rpcUrl: '',
+      rpcUrl: 'https://rpc.ankr.com/polygon',
       logo: 'assets/images/polygon.png',
     },
     {
       name: 'Goerli',
-      rpcUrl: '',
-      logo: 'assets/images/goerli.png',
+      rpcUrl: 'https://rpc.ankr.com/eth_goerli',
+      logo: 'assets/images/ethereum.png',
     },
     {
       name: 'Sepolia',
-      rpcUrl: '',
-      logo: 'assets/images/sepolia.png',
+      rpcUrl: 'https://rpc.ankr.com/eth_sepolia',
+      logo: 'assets/images/ethereum.png',
     },
   ];
 
   const selectNetwork = (network) => {
     setActiveComponent(network.name);
+    setActiveNetwork(network.name);
     localStorage.setItem('activeNetwork', JSON.stringify(network));
   }
   return (
 
-    <section id="generator" className="py-14">
+    <section id="generator" className="py-20">
       <div className="container z-10">
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 py-6">
           {

@@ -2,7 +2,7 @@ import { FaArrowRightLong } from 'react-icons/fa6'
 
 const Action = () => {
   return (
-    <section className="py-12">
+    <section className="py-20">
       <div className="container">
         <div className="p-6 rounded-xl bg-default-950/40">
           <div className="flex flex-wrap items-center gap-6">
